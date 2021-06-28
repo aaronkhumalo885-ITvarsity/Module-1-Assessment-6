@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>	
+<head>
+    <link href="css/tourstyle.css" rel="stylesheet" type="text/css"  media="all" />	
+    <link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min-contact.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/stylecontact.css" rel='stylesheet' type='text/css' />
+    <script src="js/jquery.min.contac.js"></script>
+    <!--webfonts-->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <!--//webfonts-->
+</head>
+<body>
+
+    <div class="clear"> </div>
+    <!---start-content---->
+    <div class="content">
+            <div class="content_top">
+                <div class="wrap">
+                    <h1><a href="#">WELCOME TO Contact Us Form</a></h1> 
+                    <p> Please click on the Blue button bellow to proceed, to either send us your feedback or your querry message to us we will contact you back </p>
+                  
+                </div>
+            </div>
+        
+     </div>
+
+ <div class="w3l_frm">
+    <div class="container">	
+        <div class="header-social wthree">
+			<ul>
+                <li>
+                    <a href="#popup1" class="m"> <span class="fa fa-envelope" aria-hidden="true"></span>Send a Message to Us</a>
+                </li>
+                <br/>
+                <a href="Index.html"><b><< Return to Home</b></a>
+            </ul>
+
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <form onsubmit="msgSuccess()" action="Index.html" method="post">
+                               <div class="form-group">
+                                   
+                                    <input type="text" name="name" placeholder="Your Name" required=""> 
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="surname" placeholder="Your Surname" required=""> 
+                               </div>
+                               <div class="form-group">
+                                <input type="text" name="phone" placeholder="Contact Number" required=""> 
+                           </div>
+                                <div class="form-group">
+                                     <input type="email" name="email" placeholder="Email" required=""> 
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Type your message here" required=""></textarea> 
+                               </div>
+                         
+
+                                <br/>
+                                <input type="submit"id="submitmessage" name="submitmessage" value="Send Message" onclick="msgFunction()" >
+                               
+                               
+
+                         </form>
+                    
+                         <a class="close" href="#">&times;</a>
+                        
+                    </div>
+                </div>
+
+        </div>
+	
+	</div>
+</li>
+
+<!--Script Functions-->
+<script>
+    function msgFunction(){
+        alert("Are you sure you want to send this message?") 
+    }
+    function msgSuccess(){
+        alert("Your message is successfully sent, Thank you, we will get in touch. You will be redirected to the Home page, click Ok to continue"); 
+    }
+</script>
+</body>
+
+</html>
